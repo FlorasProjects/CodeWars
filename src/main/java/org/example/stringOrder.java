@@ -12,13 +12,12 @@ public class stringOrder {
 
         for (int i = 0; i < separateWords.length; i++) {
             for (String word : separateWords) {
-                if (word.contains(Integer.toString(i + 1))) {
-                    result.append(word);
-                    result.append(" ");
+                if (word.contains(String.valueOf(i + 1))) {
+                    result.append(word + " ");
                 }
             }
         }
 
-        return (result.toString()).substring(0, result.length() - 1);
+        return result.toString().trim();
     }
 }
