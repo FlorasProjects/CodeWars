@@ -1,6 +1,6 @@
 package org.example;
 
-public class stringOrder {
+public class StringOrder {
     public static String orderString(String words) {
 
         if (words.isEmpty()) {
