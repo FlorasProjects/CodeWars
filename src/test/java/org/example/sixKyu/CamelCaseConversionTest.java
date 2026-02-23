@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sixKyu;
 
 import org.junit.jupiter.api.Test;
 

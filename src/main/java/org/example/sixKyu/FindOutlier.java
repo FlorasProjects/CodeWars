@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sixKyu;
 
 public class FindOutlier {
     public static int find(int[] integers) {
