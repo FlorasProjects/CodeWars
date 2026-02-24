@@ -3,12 +3,12 @@ package org.example.sixKyu;
 public class FindOutlierBetter {
 
     public int findResult(int[] arr) {
-        if(isOdd(arr[0]) && isOdd(arr[1])) {
+        if (isOdd(arr[0]) && isOdd(arr[1])) {
             return getEvenOneOut(arr, false);
         } else if (!isOdd(arr[0]) && !isOdd(arr[1])) {
             return getEvenOneOut(arr, true);
         } else {
-            if(isOdd(arr[2])) {
+            if (isOdd(arr[2])) {
                 return getEvenOneOut(arr, false);
             } else {
                 return getEvenOneOut(arr, true);

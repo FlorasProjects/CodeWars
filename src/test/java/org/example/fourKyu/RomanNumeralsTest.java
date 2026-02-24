@@ -18,6 +18,7 @@ class RomanNumeralsTest {
         //then
         assertEquals(expected, result);
     }
+
     @Test
     void givenAnInt_whenConvertNumber_thenReturnRomanNumberForTheLastDigit() {
         //given
@@ -30,6 +31,7 @@ class RomanNumeralsTest {
         //then
         assertEquals(expected, result);
     }
+
     @Test
     void givenARomanValue_whenConvertNumber_thenReturnIntValue() {
         //given
