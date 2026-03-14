@@ -59,6 +59,4 @@ class Rot13Test {
         //then
         assertEquals(output, result);
     }
-
-
 }

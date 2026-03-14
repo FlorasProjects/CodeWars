@@ -24,18 +24,20 @@ public class Rot13 {
 
     public static String rot13(String input) {
         StringBuilder result = new StringBuilder();
+        int displacement = 0;
         for (char c : input.toCharArray()) {
             if ((c < 'A' || c > 'Z') && (c < 'a' || c > 'z')) {
                 result.append(c);
                 continue;
             }
             if ((c + 13) > 'z' && Character.isLowerCase(c)) {
-                result.append((char) (c + 13 - ('z' - 'a' + 1)));
+                displacement = 13 - ('z' - 'a' + 1);
             } else if ((c + 13) > 'Z' && Character.isUpperCase(c)) {
-                result.append((char) (c + 13 - ('Z' - 'A' + 1)));
+                displacement = 13 - ('Z' - 'A' + 1);
             } else {
-                result.append((char) (c + 13));
+                displacement = 13;
             }
+            result.append((char) (c + displacement));
         }
         return String.valueOf(result);
     }
