@@ -28,7 +28,11 @@ public class TrickyQuestions {
     `11. Autoboxing1. Difference between type promotion and autoboxing - make method for each2.` <- My answer: Type promotion: widening of a type in order to fit a bigger number without overflow,
      a seatbelt feature in java. Autoboxing: changing a type into its wrapper class (each type has its own) in order to have access to certain overloaded methods and other features.
          */
-void autoboxing(){
+Integer autoboxing(int victimOfAutoboxing){
+return new Integer(victimOfAutoboxing);
+}
 
+int typePromotion(byte candidateForPromotion, int raise){
+    return raise + candidateForPromotion;
 }
 }
